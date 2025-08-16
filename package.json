@@ -12,15 +12,15 @@
     "lightweight"
   ],
   "license": "MIT",
-  "author": "َAbolfazl",
+  "author": "Abolfazl-sarani00",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/َAbolfazl/mini-jalali-date.git"
+    "url": "git+https://github.com/Abolfazl-sarani00/mini-jalali-date.git"
   },
   "bugs": {
-    "url": "https://github.com/َAbolfazl/mini-jalali-date/issues"
+    "url": "https://github.com/Abolfazl-sarani00/mini-jalali-date/issues"
   },
-  "homepage": "https://github.com/َAbolfazl/mini-jalali-date#readme",
+  "homepage": "https://github.com/Abolfazl-sarani00/mini-jalali-date#readme",
   "type": "module",
   "main": "dist/index.cjs",
   "module": "dist/index.mjs",
