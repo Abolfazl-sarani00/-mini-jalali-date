@@ -1,0 +1,57 @@
+{
+  "name": "mini-jalali-date",
+  "version": "0.1.0",
+  "description": "Lightweight, dependency-free Jalali (Persian) date formatter for JS/TS/React/Next.",
+  "keywords": [
+    "jalali",
+    "persian",
+    "date",
+    "format",
+    "fa-IR",
+    "calendar",
+    "lightweight"
+  ],
+  "license": "MIT",
+  "author": "َAbolfazl",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/َAbolfazl/mini-jalali-date.git"
+  },
+  "bugs": {
+    "url": "https://github.com/َAbolfazl/mini-jalali-date/issues"
+  },
+  "homepage": "https://github.com/َAbolfazl/mini-jalali-date#readme",
+  "type": "module",
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "sideEffects": false,
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format esm,cjs --dts --clean",
+    "dev": "tsup src/index.ts --format esm,cjs --dts --watch",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "eslint -c .eslintrc.json \"src/**/*.{ts,tsx}\"",
+    "prepublishOnly": "npm run build && npm test"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.30",
+    "eslint": "^8.57.0",
+    "prettier": "^3.3.3",
+    "tsup": "^8.1.0",
+    "typescript": "^5.4.5",
+    "vitest": "^1.6.0"
+  },
+  "engines": {
+    "node": ">=16"
+  }
+}
